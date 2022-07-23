@@ -1,12 +1,32 @@
 const sun = document.querySelector(".sun"),
   moon = document.querySelector(".moon")
-const d = document.body
 
-d.addEventListener("DOMContentLoaded", () => {
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    document.body.classList.add("dark")
-  }
+//input
+const userInput = document.querySelector("#textinput")
+let newTodo = []
+
+userInput.addEventListener("keyup", (e) => {
+    let userInputTask = e.target.value
+    if (e.key === "Enter") {
+        createTodo(userInputTask)
+    }
 })
+
+const createTodo = (e) => {
+    let todoValue = e
+    newTodo.push(e)
+   
+}
+// const d = document.body
+
+// d.addEventListener("DOMContentLoaded", () => {
+//   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+//     document.body.classList.add("dark")
+//   }
+// })
+
+sun.addEventListener("click", () => changeTheme("sun"))
+moon.addEventListener("click", () => changeTheme("moon"))
 
 const changeTheme = (svg) => {
   if (svg === "moon") {
@@ -18,13 +38,8 @@ const changeTheme = (svg) => {
   }
 }
 
-sun.addEventListener("click", () => changeTheme("sun"))
-moon.addEventListener("click", () => changeTheme("moon"))
-
 const li = document.querySelector("ul")
 const todo = li.querySelector(".todo")
 todo.addEventListener("click", () => {
-    todo.classList.toggle("active")
+  todo.classList.toggle("active")
 })
-
-

@@ -6,9 +6,18 @@
     @apply bg-gradient-to-br from-gradient_1 to-gradient_2
 }
 .todo.active p{
-    text-decoration: line-through;
+    @apply text-Light_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1
 }
-/* .fade-in{
+.todo.active p::before{
+    opacity: 1;
+}
+.todo.active  svg {
+    color: hsl(0, 0%, 98%);
+}
+.status p.active{
+    
+}
+.fade-in{
     animation: fadein 500ms ease-in-out forwards;
 }
 @keyframes fadein {
@@ -20,7 +29,7 @@
         opacity: 1;
         transform: scale(1);
     }
-} */
+}
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }

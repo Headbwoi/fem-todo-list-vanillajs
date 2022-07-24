@@ -1,85 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="description" content="Frontend Mentor | Todo app">
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
-  <link rel="stylesheet" href="public/output.css">
-</head>
-<body class="bg-Very_Light_Gray dark:bg-Very_Dark_Blue min-h-screen w-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Frontend Mentor | Todo app" />
 
-  <main class="relative font-sans">
-    <span class="absolute top-0 left-0 bg-[url('../images/bg-mobile-light.jpg')] md:bg-[url('../images/bg-desktop-light.jpg')] w-full h-[12.5rem] md:h-[18.75rem] bg-center bg-no-repeat bg-cover"></span>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-    <div class="container relative">
-      <div class=" max-w-[20.625rem] md:max-w-[34.0625rem] mx-auto">
-      <header class="flex items-center justify-between pt-12 md:pt-[4.75rem] mb-10 md:mb-12">
-        <div>
-          <h1 class="uppercase text-Very_Light_Gray text-2xl md:text-[2rem] font-bold tracking-[10px] md:tracking-[1rem]">Todo</h1>
-        </div>
-        <div>
-          <svg class="sun hidden cursor-pointer fade-in" xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/></svg>
-          <svg class="moon cursor-pointer fade-in" xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg>
-        </div>
-      </header>
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="public/output.css" />
+  </head>
+  <body class="font-sans">
+    <main
+      class="relative bg-Very_Light_Gray dark:bg-Very_Dark_Blue min-h-screen w-screen"
+    >
+      <!-- background -->
+      <span
+        class="absolute top-0 left-0 bg-[url('../images/bg-mobile-light.jpg')] md:bg-[url('../images/bg-desktop-light.jpg')] dark:bg-[url('../images/bg-mobile-dark.jpg')] md:dark:bg-[url('../images/bg-desktop-dark.jpg')] w-full h-[12.5rem] md:h-[18.75rem] bg-center bg-no-repeat object-cover"
+      ></span>
 
-      <!-- add pointer color -->
-      <!-- input -->
-      <div class="input flex items-center justify-start bg-Very_Light_Gray h-12 w-full rounded-md relative px-5 overflow-hidden mb-[0.875rem] md:mb-[1.375rem]">
-      <input type="text" id="textinput" class="w-full h-full absolute inset-0 pl-[3.375rem] md:pl-[4.5rem] outline-none font-bold text-lg text-Very_Dark_Grayish_Blue placeholder:text-Dark_Grayish_Blue_light placeholder:font-normal" placeholder="Create a new todo">
-        <span class="mr-3 block absolute w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light"></span>
-      </div>
-
-      <!-- todo list -->
-      <div class="w-full bg-Very_Light_Gray rounded-md shadow-2xl">
-
-        <!-- liast items -->
-        <ul class="list-none">
-          <li class="flex items-center justify-start h-[3.25rem] md:h-16 px-5 border-b border-Light_Grayish_Blue_light">
-            <div class="flex todo group cursor-pointer">
-              <span class="mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1  group-hover:border-r group-hover:border-r-gradient_2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
-              </span>
-              <p class="text-Very_Dark_Grayish_Blue_light">complete online javascript</p>
+      <div class="container relative">
+        <div class="w-[20.625rem] md:w-[33.75rem] mx-auto">
+          <header
+            class="flex items-center justify-between pt-12 md:pt-[4.75rem] mb-10 md:mb-12"
+          >
+            <div>
+              <h1
+                class="uppercase text-Very_Light_Gray text-2xl md:text-[2rem] font-bold tracking-[10px] md:tracking-[1rem]"
+              >
+                Todo
+              </h1>
             </div>
-            <svg class="ml-auto fill-current text-Very_Dark_Grayish_Blue_light inline-block h-6 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg"><path d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/></svg>
- 
-          </li>         
-        </ul>
-        <!-- status bar -->
+            <div>
+              <svg
+                class="sun hidden cursor-pointer fade-in"
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+              >
+                <path
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                  d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"
+                />
+              </svg>
+              <svg
+                class="moon cursor-pointer fade-in"
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+              >
+                <path
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                  d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
+                />
+              </svg>
+            </div>
+          </header>
 
-        <div class="w-full h-[3.125rem] flex items-center justify-between px-5 mb-4 md:mb-12">
-          <p class="text-Light_Grayish_Blue_light"><span>5 </span>items left</p>
-          <div class="hidden md:flex items-center justify-center space-x-5">
-            <p class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer">All</p>
-            <p class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer">Active</p>
-            <p class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer">Completed</p>
+          <!-- add pointer color -->
+          <!-- input -->
+          <div class="relative mb-[0.875rem] md:mb-[1.375rem]">
+            <input
+              type="text"
+              id="textinput"
+              class="input flex items-center justify-start rounded-md bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue h-12 w-full md:h-16 pl-[3.375rem] md:pl-[4.5rem] outline-none font-bold text-base md:text-lg text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark placeholder:text-Dark_Grayish_Blue_light dark:placeholder:text-Dark_Grayish_Blue_dark placeholder:font-normal"
+              placeholder="Create a new todo"
+            />
+            <span
+              class="mr-3 block absolute top-1/2 -translate-y-1/2 left-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2"
+            ></span>
           </div>
-          <p class="text-Light_Grayish_Blue_light font-normal hover:text-Dark_Grayish_Blue_light cursor-pointer duration-200">Clear Completed</p>
+
+          <!-- todo list -->
+          <div
+            class="w-full bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue rounded-md shadow-2xl"
+          >
+            <!-- liast items -->
+            <ul class="list-none">
+              <li
+                class="flex items-center justify-start h-[3.25rem] md:h-16 px-5 border-b border-Light_Grayish_Blue_light dark:border-b dark:border-Very_Dark_Grayish_Blue_dark1"
+              >
+                <div class="flex todo active group cursor-pointer">
+                  <span
+                    class="mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
+                  >
+                    <svg
+                    class="text-Very_Light_Gray dark:text-Very_Dark_Blue"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="9"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        d="M1 4.304L3.696 7l6-6"
+                      />
+                    </svg>
+                  </span>
+                  <p
+                    class="text-Very_Dark_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1 md:text-xl first-letter:uppercase relative before:absolute before:top-[60%] left-0 before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-100"
+                  >
+                    complete online javascript course
+                  </p>
+                </div>
+                <!-- check icon -->
+                <div class="ml-auto h-6 w-6 relative">
+                 <span class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block rotate-45"></span>
+                 <span class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block -rotate-45"></span>
+                </div>
+                
+              </li>
+            </ul>
+            <!-- status bar -->
+
+            <div
+              class="w-full h-[3.125rem] flex items-center justify-between px-5 mb-4 md:mb-12"
+            >
+              <p class="text-Light_Grayish_Blue_light">
+                <span>5 </span>items left
+              </p>
+              <div class="hidden md:flex items-center justify-center space-x-5 status">
+                <p
+                  class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer"
+                >
+                  All
+                </p>
+                <p
+                  class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer"
+                >
+                  Active
+                </p>
+                <p
+                  class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer"
+                >
+                  Completed
+                </p>
+              </div>
+              <p
+                class="text-Light_Grayish_Blue_light font-normal hover:text-Dark_Grayish_Blue_light cursor-pointer duration-200"
+              >
+                Clear Completed
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center space-x-5 w-full h-[3.125rem] px-5 mb-10 bg-Very_Light_Gray rounded-md shadow-2xl md:hidden"
+          >
+            <p
+              class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer"
+            >
+              All
+            </p>
+            <p
+              class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer"
+            >
+              Active
+            </p>
+            <p
+              class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer"
+            >
+              Completed
+            </p>
+          </div>
+          <p class="text-center text-Dark_Grayish_Blue_light">
+            Drag and drop to reorder list
+          </p>
         </div>
       </div>
-        <div class="flex items-center justify-center space-x-5 w-full h-[3.125rem] px-5 mb-10 bg-Very_Light_Gray rounded-md shadow-2xl md:hidden">
-          <p class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer">All</p>
-          <p class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer">Active</p>
-          <p class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light duration-200 cursor-pointer">Completed</p>
-      </div>
-      <p class="text-center text-Dark_Grayish_Blue_light">Drag and drop to reorder list</p>
-    </div>
-    </div>
-  </main>
+    </main>
 
-
-
-  <!-- <footer>
+    <!-- <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </footer> -->
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

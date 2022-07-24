@@ -625,10 +625,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-\[1px\] {
-  margin-top: 1px;
-}
-
 .mr-24 {
   margin-right: 6rem;
 }
@@ -689,12 +685,12 @@ video {
   width: 100vw;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[20\.625rem\] {
   width: 20.625rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-5 {
@@ -754,32 +750,8 @@ video {
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-clip {
-  overflow: clip;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.break-words {
-  overflow-wrap: break-word;
-}
-
-.break-all {
-  word-break: break-all;
 }
 
 .rounded-md {
@@ -813,17 +785,16 @@ video {
   background-image: url('../images/bg-mobile-light.jpg');
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-center {
   background-position: center;
 }
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .px-5 {
@@ -845,10 +816,6 @@ video {
 
 .pr-5 {
   padding-right: 1.25rem;
-}
-
-.pl-\[2\.375rem\] {
-  padding-left: 2.375rem;
 }
 
 .pl-12 {
@@ -873,14 +840,14 @@ video {
   line-height: 1.5rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -917,10 +884,6 @@ video {
 .text-Dark_Grayish_Blue_light {
   --tw-text-opacity: 1;
   color: hsl(236 9% 61% / var(--tw-text-opacity));
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .shadow-2xl {
@@ -1118,10 +1081,6 @@ video {
   border-right-color: hsl(280 87% 65% / var(--tw-border-opacity));
 }
 
-.group:hover .group-hover\:opacity-10 {
-  opacity: 0.1;
-}
-
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
@@ -1269,16 +1228,6 @@ video {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .md\:tracking-\[1rem\] {

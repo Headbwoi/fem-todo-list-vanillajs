@@ -27,6 +27,20 @@ d.addEventListener("DOMContentLoaded", () => {
   }
 })
 
+sun.addEventListener("click", () => changeTheme("sun"))
+moon.addEventListener("click", () => changeTheme("moon"))
+
+const changeTheme = (svg) => {
+  if (svg === "moon") {
+    setThemeTwo()
+    localStorage.setItem("theme", JSON.stringify("dark"))
+  } else if (svg === "sun") {
+    setThemeOne()
+    localStorage.setItem("theme", JSON.stringify(null))
+  }
+}
+
+
 //input
 const userInput = document.querySelector("#textinput")
 
@@ -37,19 +51,3 @@ userInput.addEventListener("keyup", (e) => {
   }
 })
 
-sun.addEventListener("click", () => changeTheme("sun"))
-moon.addEventListener("click", () => changeTheme("moon"))
-
-const changeTheme = (svg) => {
-  if (svg === "moon") {
-    moon.classList.add("hidden")
-    sun.classList.remove("hidden")
-    body.classList.add("dark")
-    localStorage.setItem("theme", JSON.stringify("dark"))
-  } else if (svg === "sun") {
-    moon.classList.remove("hidden")
-    sun.classList.add("hidden")
-    body.classList.remove("dark")
-    localStorage.setItem("theme", JSON.stringify(null))
-  }
-}

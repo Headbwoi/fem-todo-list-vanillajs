@@ -15,7 +15,7 @@
     color: hsl(0, 0%, 98%);
 }
 .status p.active{
-    
+    @apply text-Bright_Blue
 }
 .fade-in{
     animation: fadein 500ms ease-in-out forwards;
@@ -30,6 +30,12 @@
         transform: scale(1);
     }
 }
+@media (hover: hover) {
+    .check:hover{
+        opacity: 1;
+    }
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }

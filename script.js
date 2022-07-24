@@ -40,14 +40,23 @@ const changeTheme = (svg) => {
   }
 }
 
-
 //input
 const userInput = document.querySelector("#textinput")
 
-userInput.addEventListener("keyup", (e) => {
-  let userInputTask = e.target.value
-  if (e.key === "Enter") {
-    createTodo(userInputTask)
-  }
-})
+let todos = JSON.parse(localStorage.getItem("todo-list"))
 
+userInput.addEventListener("keyup", (e) => {
+  let userInputTask = userInput.value.trim()
+
+  if (e.key == "Enter" && userInputTask) {
+    if (!todos) {
+      todos = [];
+    }
+    userInput.value = "";
+    let userTask = { name: userInputTask, status: "pending" }
+    todos.push(userTask)
+
+    localStorage.setItem("todo-list", JSON.stringify(todos))
+  }
+  showTodo()
+})

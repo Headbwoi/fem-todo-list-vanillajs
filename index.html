@@ -16,13 +16,13 @@
     <title>Frontend Mentor | Todo app</title>
     <link rel="stylesheet" href="public/output.css" />
   </head>
-  <body class="font-sans">
+  <body class="font-sans overflow-x-hidden">
     <main
       class="relative bg-Very_Light_Gray dark:bg-Very_Dark_Blue min-h-screen w-screen"
     >
       <!-- background -->
       <span
-        class="absolute top-0 left-0 bg-[url('../images/bg-mobile-light.jpg')] md:bg-[url('../images/bg-desktop-light.jpg')] dark:bg-[url('../images/bg-mobile-dark.jpg')] md:dark:bg-[url('../images/bg-desktop-dark.jpg')] w-screen h-[12.5rem] md:h-[18.75rem] bg-center bg-no-repeat bg-cover"
+        class="absolute top-0 left-0 bg-[url('../images/bg-mobile-light.jpg')] md:bg-[url('../images/bg-desktop-light.jpg')] dark:bg-[url('../images/bg-mobile-dark.jpg')] md:dark:bg-[url('../images/bg-desktop-dark.jpg')] w-screen h-[12.5rem] md:h-[18.75rem] bg-center bg-no-repeat bg-contain"
       ></span>
 
       <div class="container relative">
@@ -71,7 +71,7 @@
             <input
               type="text"
               id="textinput"
-              class="input flex items-center justify-start rounded-md bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue h-12 w-full md:h-16 pl-[3.375rem] md:pl-[4.5rem] outline-none font-bold text-base md:text-[17.5px] text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark placeholder:text-Dark_Grayish_Blue_light dark:placeholder:text-Dark_Grayish_Blue_dark placeholder:font-normal"
+              class="input flex items-center justify-start rounded-md bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue h-12 w-full md:h-16 pl-[3.375rem] md:pl-[4.5rem] outline-none font-normal text-base md:text-[17.5px] text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark placeholder:text-Dark_Grayish_Blue_light dark:placeholder:text-Dark_Grayish_Blue_dark placeholder:font-normal"
               placeholder="Create a new todo..."
             />
             <span
@@ -81,7 +81,7 @@
 
           <!-- todo list -->
           <div
-            class="w-full bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue rounded-md shadow-2xl"
+            class="w-full bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue rounded-md shadow-2xl "
           >
             <!-- list items -->
             <ul class="list-none">
@@ -90,7 +90,7 @@
             >
               <div class="flex todo  cursor-pointer ">
                 <span
-                  class="absolute top-1/2 -translate-y-1/2 left-3 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
+                  class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
                 >
                   <svg
                     class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
@@ -107,7 +107,7 @@
                   </svg>
                 </span>
                 <p
-                  class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
+                  class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
                 >
                   complete online javascript course
                 </p>
@@ -130,7 +130,7 @@
               >
                 <div class="flex todo  cursor-pointer ">
                   <span
-                    class="absolute top-1/2 -translate-y-1/2 left-3 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
+                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
                   >
                     <svg
                       class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
@@ -147,7 +147,7 @@
                     </svg>
                   </span>
                   <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
+                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
                   >
                     jog around the park 3x
                   </p>
@@ -170,7 +170,7 @@
               >
                 <div class="flex todo  cursor-pointer ">
                   <span
-                    class="absolute top-1/2 -translate-y-1/2 left-3 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
+                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
                   >
                     <svg
                       class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
@@ -187,7 +187,7 @@
                     </svg>
                   </span>
                   <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
+                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
                   >
                     10 minutes meditation
                   </p>
@@ -210,7 +210,7 @@
               >
                 <div class="flex todo  cursor-pointer ">
                   <span
-                    class="absolute top-1/2 -translate-y-1/2 left-3 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
+                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
                   >
                     <svg
                       class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
@@ -227,7 +227,7 @@
                     </svg>
                   </span>
                   <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
+                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
                   >
                     read for 1 hour
                   </p>
@@ -250,7 +250,7 @@
               >
                 <div class="flex todo  cursor-pointer ">
                   <span
-                    class="absolute top-1/2 -translate-y-1/2 left-3 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
+                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
                   >
                     <svg
                       class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
@@ -267,7 +267,7 @@
                     </svg>
                   </span>
                   <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
+                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
                   >
                     pick up groceries
                   </p>
@@ -290,7 +290,7 @@
               >
                 <div class="flex todo  cursor-pointer ">
                   <span
-                    class="absolute top-1/2 -translate-y-1/2 left-3 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
+                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
                   >
                     <svg
                       class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
@@ -307,7 +307,7 @@
                     </svg>
                   </span>
                   <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
+                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
                   >
                     complete Todo App on Frontend Mentor
                   </p>

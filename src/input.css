@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +15,9 @@
     @apply text-Very_Light_Gray dark:text-Very_Light_Gray
 }
 .status p.active{
+    @apply text-Bright_Blue
+}
+.status-mobile p.active{
     @apply text-Bright_Blue
 }
 .fade-in{
@@ -36,7 +41,3 @@
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-
-/*     
-- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
-- Weights: 400, 700 */

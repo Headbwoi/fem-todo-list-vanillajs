@@ -84,7 +84,7 @@
             class="w-full bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue rounded-md shadow-2xl"
           >
             <!-- list items -->
-            <ul class="list-none">
+            <ul class="list-none ">
               
             </ul>
             <!-- status bar -->
@@ -95,22 +95,25 @@
               <p
                 class="text-Light_Grayish_Blue_light dark:text-Dark_Grayish_Blue_dark text-xs md:text-[13.5px] font-normal mr-[94.2px]"
               >
-                <span data-itemleft>5</span> items left
+                <span data-itemleft></span> items left
               </p>
               <div
                 class="hidden md:flex items-center justify-center space-x-5 status"
               >
                 <p
+                data-status="all"
                   class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1 hover:dark:text-Light_Grayish_Blue_hover text-[13.5px] duration-200 cursor-pointer active"
                 >
                   All
                 </p>
                 <p
+                data-status="active"
                   class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1 hover:dark:text-Light_Grayish_Blue_hover text-[13.5px] duration-200 cursor-pointer"
                 >
                   Active
                 </p>
                 <p
+                data-status="completed"
                   class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1 hover:dark:text-Light_Grayish_Blue_hover text-[13.5px] duration-200 cursor-pointer"
                 >
                   Completed
@@ -128,16 +131,19 @@
             class="flex items-center justify-center space-x-5 w-full h-[3.125rem] px-5 mb-10 bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue rounded-md shadow-2xl md:hidden status-mobile"
           >
             <p
+            data-status="all"
               class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1 hover:dark:text-Light_Grayish_Blue_hover duration-200 cursor-pointer active"
             >
               All
             </p>
             <p
+            data-status="active"
               class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1 hover:dark:text-Light_Grayish_Blue_hover duration-200 cursor-pointer"
             >
               Active
             </p>
             <p
+            data-status="completed"
               class="text-Dark_Grayish_Blue_light font-bold hover:text-Very_Dark_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1 hover:dark:text-Light_Grayish_Blue_hover duration-200 cursor-pointer"
             >
               Completed
@@ -158,6 +164,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </footer> -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="index.js"></script>
   </body>
 </html>

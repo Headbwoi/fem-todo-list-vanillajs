@@ -2,17 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.todo.active span{
+.todo:checked ~ span{
     @apply bg-gradient-to-br from-gradient_1 to-gradient_2
 }
-.todo.active p{
-    @apply text-Light_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1
+.todo:checked ~ p{
+    @apply text-Light_Grayish_Blue_light dark:text-Very_Dark_Grayish_Blue_dark1 line-through
 }
-.todo.active p::before{
-    opacity: 1;
-}
-.todo.active  svg {
-    color: hsl(0, 0%, 98%);
+
+.todo:checked ~ span > svg {
+    @apply text-Very_Light_Gray dark:text-Very_Light_Gray
 }
 .status p.active{
     @apply text-Bright_Blue

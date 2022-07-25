@@ -16,13 +16,13 @@
     <title>Frontend Mentor | Todo app</title>
     <link rel="stylesheet" href="public/output.css" />
   </head>
-  <body class="font-sans overflow-x-hidden">
+  <body class="font-sans">
     <main
       class="relative bg-Very_Light_Gray dark:bg-Very_Dark_Blue min-h-screen w-screen"
     >
       <!-- background -->
       <span
-        class="absolute top-0 left-0 bg-[url('../images/bg-mobile-light.jpg')] md:bg-[url('../images/bg-desktop-light.jpg')] dark:bg-[url('../images/bg-mobile-dark.jpg')] md:dark:bg-[url('../images/bg-desktop-dark.jpg')] w-screen h-[12.5rem] md:h-[18.75rem] bg-center bg-no-repeat bg-contain"
+        class="absolute top-0 left-0 bg-[url('../images/bg-mobile-light.jpg')] md:bg-[url('../images/bg-desktop-light.jpg')] dark:bg-[url('../images/bg-mobile-dark.jpg')] md:dark:bg-[url('../images/bg-desktop-dark.jpg')] w-screen h-[12.5rem] md:h-[18.75rem] bg-center bg-no-repeat object-contain"
       ></span>
 
       <div class="container relative">
@@ -75,255 +75,17 @@
               placeholder="Create a new todo..."
             />
             <span
-              class="mr-3 block absolute top-1/2 -translate-y-1/2 left-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2"
+              class="mr-3 block absolute top-1/2 -translate-y-1/2 left-4 md:left-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2"
             ></span>
           </div>
 
           <!-- todo list -->
           <div
-            class="w-full bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue rounded-md shadow-2xl "
+            class="w-full bg-Very_Light_Gray dark:bg-Very_Dark_Desaturated_Blue rounded-md shadow-2xl"
           >
             <!-- list items -->
             <ul class="list-none">
-              <li
-              class="flex items-center justify-start h-[3.25rem] md:h-[4.0625rem] pl-6 pr-5 border-b border-Light_Grayish_Blue_light dark:border-b dark:border-Very_Dark_Grayish_Blue_dark1 relative overflow-hidden group cursor-pointer"
-            >
-              <div class="flex todo  cursor-pointer ">
-                <span
-                  class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
-                >
-                  <svg
-                    class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="11"
-                    height="9"
-                  >
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      d="M1 4.304L3.696 7l6-6"
-                    />
-                  </svg>
-                </span>
-                <p
-                  class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
-                >
-                  complete online javascript course
-                </p>
-              </div>
-              <!-- check icon -->
-              <div
-                class="ml-auto h-6 w-6 relative md:opacity-0 group-hover:opacity-100 check"
-              >
-                <span
-                  class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block rotate-45"
-                ></span>
-                <span
-                  class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block -rotate-45"
-                ></span>
-              </div>
-            </li>
-
-              <li
-                class="flex items-center justify-start h-[3.25rem] md:h-[4.0625rem] pl-6 pr-5 border-b border-Light_Grayish_Blue_light dark:border-b dark:border-Very_Dark_Grayish_Blue_dark1 relative overflow-hidden group cursor-pointer"
-              >
-                <div class="flex todo  cursor-pointer ">
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
-                  >
-                    <svg
-                      class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="9"
-                    >
-                      <path
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        d="M1 4.304L3.696 7l6-6"
-                      />
-                    </svg>
-                  </span>
-                  <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
-                  >
-                    jog around the park 3x
-                  </p>
-                </div>
-                <!-- check icon -->
-                <div
-                  class="ml-auto h-6 w-6 relative md:opacity-0 group-hover:opacity-100 check"
-                >
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block rotate-45"
-                  ></span>
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block -rotate-45"
-                  ></span>
-                </div>
-              </li>
-
-              <li
-                class="flex items-center justify-start h-[3.25rem] md:h-[4.0625rem] pl-6 pr-5 border-b border-Light_Grayish_Blue_light dark:border-b dark:border-Very_Dark_Grayish_Blue_dark1 relative overflow-hidden group cursor-pointer"
-              >
-                <div class="flex todo  cursor-pointer ">
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
-                  >
-                    <svg
-                      class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="9"
-                    >
-                      <path
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        d="M1 4.304L3.696 7l6-6"
-                      />
-                    </svg>
-                  </span>
-                  <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
-                  >
-                    10 minutes meditation
-                  </p>
-                </div>
-                <!-- check icon -->
-                <div
-                  class="ml-auto h-6 w-6 relative md:opacity-0 group-hover:opacity-100 check"
-                >
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block rotate-45"
-                  ></span>
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block -rotate-45"
-                  ></span>
-                </div>
-              </li>
-
-              <li
-                class="flex items-center justify-start h-[3.25rem] md:h-[4.0625rem] pl-6 pr-5 border-b border-Light_Grayish_Blue_light dark:border-b dark:border-Very_Dark_Grayish_Blue_dark1 relative overflow-hidden group cursor-pointer"
-              >
-                <div class="flex todo  cursor-pointer ">
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
-                  >
-                    <svg
-                      class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="9"
-                    >
-                      <path
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        d="M1 4.304L3.696 7l6-6"
-                      />
-                    </svg>
-                  </span>
-                  <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
-                  >
-                    read for 1 hour
-                  </p>
-                </div>
-                <!-- check icon -->
-                <div
-                  class="ml-auto h-6 w-6 relative md:opacity-0 group-hover:opacity-100 check"
-                >
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block rotate-45"
-                  ></span>
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block -rotate-45"
-                  ></span>
-                </div>
-              </li>
-
-              <li
-                class="flex items-center justify-start h-[3.25rem] md:h-[4.0625rem] pl-6 pr-5 border-b border-Light_Grayish_Blue_light dark:border-b dark:border-Very_Dark_Grayish_Blue_dark1 relative overflow-hidden group cursor-pointer"
-              >
-                <div class="flex todo  cursor-pointer ">
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
-                  >
-                    <svg
-                      class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="9"
-                    >
-                      <path
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        d="M1 4.304L3.696 7l6-6"
-                      />
-                    </svg>
-                  </span>
-                  <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
-                  >
-                    pick up groceries
-                  </p>
-                </div>
-                <!-- check icon -->
-                <div
-                  class="ml-auto h-6 w-6 relative md:opacity-0 group-hover:opacity-100 check"
-                >
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block rotate-45"
-                  ></span>
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block -rotate-45"
-                  ></span>
-                </div>
-              </li>
-
-              <li
-                class="flex items-center justify-start h-[3.25rem] md:h-[4.0625rem] pl-6 pr-5 border-b border-Light_Grayish_Blue_light dark:border-b dark:border-Very_Dark_Grayish_Blue_dark1 relative overflow-hidden group cursor-pointer"
-              >
-                <div class="flex todo  cursor-pointer ">
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 mr-3 md:mr-6 w-5 h-5 md:h-6 md:w-6 rounded-full ring-1 ring-Light_Grayish_Blue_light dark:ring-Very_Dark_Grayish_Blue_dark2 cursor-pointer grid place-items-center group-hover:border-l group-hover:border-l-gradient_1 group-hover:border-r group-hover:border-r-gradient_2"
-                  >
-                    <svg
-                      class="text-Very_Light_Gray dark:text-Very_Dark_Desaturated_Blue"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="9"
-                    >
-                      <path
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        d="M1 4.304L3.696 7l6-6"
-                      />
-                    </svg>
-                  </span>
-                  <p
-                    class="text-Very_Dark_Grayish_Blue_light dark:text-Light_Grayish_Blue_dark hover:dark:text-Light_Grayish_Blue_hover md:text-[1.09375rem] first-letter:uppercase relative pl-8 md:pl-12 before:absolute before:top-[60%] left-0 text-xs before:w-full before:h-[1px] before:bg-Dark_Grayish_Blue_light dark:before:bg-Dark_Grayish_Blue_dark before:opacity-0 font-normal"
-                  >
-                    complete Todo App on Frontend Mentor
-                  </p>
-                </div>
-                <!-- check icon -->
-                <div
-                  class="ml-auto h-6 w-6 relative md:opacity-0 group-hover:opacity-100 check"
-                >
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block rotate-45"
-                  ></span>
-                  <span
-                    class="absolute top-1/2 -translate-y-1/2 w-full h-[1px] cursor-pointer bg-Light_Grayish_Blue_light dark:bg-Very_Dark_Grayish_Blue_dark1 block -rotate-45"
-                  ></span>
-                </div>
-              </li>
+              
             </ul>
             <!-- status bar -->
 

@@ -174,3 +174,21 @@ const deleteTodo = (deleteIndex, filter) => {
   localStorage.setItem("todo-list", JSON.stringify(todos)) //updates the todos in localstorage
   showTodo(filter)
 }
+const clearCompleted = document.querySelector("[data-clearCompeted]")
+
+const checkCompleted = () => {
+  let list = ulElement.querySelectorAll("li")
+  list.forEach((item) => {
+    if (item.classList.contains("checked")) {
+      todos.forEach((todo, index) => {
+        if (todo.status === "completed") {
+          todos.splice(index, 1)
+          localStorage.setItem("todo-list", JSON.stringify(todos)) //updates the todos in localstorage
+          showTodo("completed")
+        }
+      })
+    }
+  })
+}
+
+clearCompleted.addEventListener("click", checkCompleted)

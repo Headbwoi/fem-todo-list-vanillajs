@@ -31,12 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [click here](https://your-live-site-url.com)
 
 ## My process
 
@@ -47,22 +46,19 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [TailwindCss](https://tailwindcss.com/) - CSS framework
 
 ### What I learned
 
+I learnt how to effectively manipulate the localStorage Api
+I also learnt how to handle CRUD operation
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+localStorage.setItem("todo-list", JSON.stringify(todos))
+let todos = JSON.parse(localStorage.getItem("todo-list"))
 ```
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@Headbwoi](https://www.frontendmentor.io/profile/Headbwoi)
+- Twitter - [@Headbwoi](https://www.twitter.com/headbwoi_1)
